@@ -1,6 +1,17 @@
-const user = {
-  name: "Duane",
-  interests: ["Coding", "Biking", "Words ending in 'ing'"],
+import React, { useState } from 'react';
+
+const ThemeContext = React.createContext();
+
+const ThemeProvider = ({ children }) => {
+  const [theme, setTheme] = useState('light'); // Default theme can be 'light' or 'dark'
+
+  return (
+    <ThemeContext.Provider value={{ theme, setTheme }}>
+      {children}
+    </ThemeContext.Provider>
+  );
 };
 
-export default user;
+export { ThemeContext, ThemeProvider };
+
+

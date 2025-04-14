@@ -1,12 +1,15 @@
-import React from "react";
+import React from 'react';  // Import React
+import './Interests.css';   // Import the CSS file for styling
 
-function Interests({ interests, theme }) {
+function Interests({ interests }) {
   return (
-    <div>
-      <h4>Interests</h4>
-      <ul className={theme}>
-        {interests.map((interest) => (
-          <li key={interest}>{interest}</li>
+    <div className="interests">
+      <h3>Interests</h3>
+      <ul>
+        {interests.map((interest, index) => (
+          <li key={index} className="interest-item">
+            {interest}
+          </li>
         ))}
       </ul>
     </div>
@@ -14,3 +17,5 @@ function Interests({ interests, theme }) {
 }
 
 export default Interests;
+
+

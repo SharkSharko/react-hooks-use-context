@@ -1,0 +1,25 @@
+/* Interests.css */
+.interests {
+    background-color: #f0f0f0;  /* Light grey background */
+    padding: 20px;              /* Padding inside the container */
+    border-radius: 5px;         /* Rounded corners for the container */
+  }
+  
+  .interests h3 {
+    color: red; /* Heading color will be red */
+  }
+  
+  .interest-item {
+    margin: 10px 0;  /* Space between each list item */
+    font-size: 18px;  /* Set font size for each interest */
+    color: blue;     /* Default color for items will be blue */
+  }
+  
+  .interest-item:nth-child(odd) {
+    color: red; /* Odd-numbered items will be red */
+  }
+  
+  .interest-item:nth-child(even) {
+    color: blue; /* Even-numbered items will be blue */
+  }
+  
